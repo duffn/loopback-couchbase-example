@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "couchbase": {
+    "host": "127.0.0.1",
+    "port": 8091,
+    "n1qlport": 8093,
+    "connector": "couchbase",
+    "database": "loopback-example",
+    "connectionTimeout": 20000,
+    "operationTimeout": 15000
+  }
+}

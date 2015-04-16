@@ -1,0 +1,39 @@
+{
+  "name": "employee",
+  "plural": "employees",
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "companyId": {
+      "type": "number",
+      "required": true
+    },
+    "employeeNumber": {
+      "type": "number",
+      "required": true,
+      "couchbase": {
+        "preserve": true
+      }
+    },
+    "companyId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "company": {
+      "type": "belongsTo",
+      "model": "company",
+      "foreignKey": "companyId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

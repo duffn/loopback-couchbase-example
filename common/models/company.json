@@ -1,0 +1,41 @@
+{
+  "name": "company",
+  "plural": "companies",
+  "properties": {
+    "company": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "postalCode": {
+      "type": "string",
+      "required": true
+    },
+    "companyId": {
+      "type": "number",
+      "required": true,
+      "id": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "employee": {
+      "type": "hasMany",
+      "model": "employee",
+      "foreignKey": "companyId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
