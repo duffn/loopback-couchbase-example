@@ -33,9 +33,5 @@
   "company": {
     "dataSource": "couchbase",
     "public": true
-  },
-  "companyt": {
-    "dataSource": "couchbase",
-    "public": true
   }
 }
