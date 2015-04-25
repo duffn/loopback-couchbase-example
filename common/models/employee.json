@@ -20,10 +20,6 @@
       "couchbase": {
         "preserve": true
       }
-    },
-    "companyId": {
-      "type": "number",
-      "required": true
     }
   },
   "validations": [],
